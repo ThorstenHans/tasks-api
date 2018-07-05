@@ -4,7 +4,7 @@ WORKDIR /source
 COPY *.csproj .
 RUN dotnet restore
 COPY . .
-RUN dotnet Tasks.API.csproj publish --output /app/ --configuration Release
+RUN dotnet publish Tasks.API.csproj --output /app/ --configuration Release
 
 # Stage 2
 FROM microsoft/aspnetcore
