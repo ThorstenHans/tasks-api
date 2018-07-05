@@ -1,5 +1,7 @@
 # Task API
 
+Simple .NET Core API with in-memory storage.
+
 ## Run as Docker Container
 
 ```
